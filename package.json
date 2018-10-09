@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/stofiRU/StringCalculator/issues"
   },
-  "homepage": "https://github.com/stofiRU/StringCalculator#readme"
+  "homepage": "https://github.com/stofiRU/StringCalculator#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
 }
