@@ -1,0 +1,19 @@
+{
+  "name": "stringcalculator",
+  "version": "1.0.0",
+  "description": "TDD project",
+  "main": "calculator.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stofiRU/StringCalculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stofiRU/StringCalculator/issues"
+  },
+  "homepage": "https://github.com/stofiRU/StringCalculator#readme"
+}

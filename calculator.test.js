@@ -1,1 +1,1 @@
-print("test tests");
+console.log("test tests");
