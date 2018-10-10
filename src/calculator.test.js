@@ -23,3 +23,9 @@ it("should return sum of numbers when multiples numbers are in the string, even 
 it("should return sum of numbers when an unexpected amount of numbers/arguments are in the string", () => { 
     expect(add("5, 11, 34, 63, 785, 11, 5653, 233, 1")).toBe(6796);
 });
+/*
+it("should return sum of numbers when a new line is in the string", () => { 
+    expect(add("1\n2,3")).toBe(6);
+});*/
+
+// This comment is a testament to the fact that the folder restructuring worked and everything is fine in GitHub
