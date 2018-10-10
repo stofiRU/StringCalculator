@@ -11,3 +11,11 @@ it("should return number when only one number is in the string", () => {
 it("should return sum of numbers when multiples numbers are in the string", () => { 
     expect(add("1,2,3")).toBe(6);
 });
+
+it("should return sum of numbers when multiples numbers are in the string, even with partial spaces", () => { 
+    expect(add("1, 4,3")).toBe(8);
+});
+
+it("should return sum of numbers when multiples numbers are in the string, even with total spaces", () => { 
+    expect(add("1, 4, 9")).toBe(14);
+});
