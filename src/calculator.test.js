@@ -19,3 +19,7 @@ it("should return sum of numbers when multiples numbers are in the string, even 
 it("should return sum of numbers when multiples numbers are in the string, even with total spaces", () => { 
     expect(add("1, 4, 9")).toBe(14);
 });
+
+it("should return sum of numbers when an unexpected amount of numbers/arguments are in the string", () => { 
+    expect(add("5, 11, 34, 63, 785, 11, 5653, 233, 1")).toBe(6796);
+});
