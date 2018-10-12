@@ -1,14 +1,14 @@
 function add(numbers) {     // adds string of numbers
+
     if (numbers == "") {    // empty string returns 0
         return 0;
     }
-    else if (numbers.includes("\n") || numbers.includes(",")) {     // if string includes commas or newlines
-        var numbersArray = numbers.split(/[\n,]+/);                 // split the string by the commas and newlines, using reg expr
-        return sum(numbersArray);                                   // return the sum
-    }
-    else {
-        return parseInt(numbers);                                   // if the string doesn't include commas or newlines, it's a single number. Parse and return
-    }
+    parsedNumbers = parseString (numbers);
+    return sum(parsedNumbers);
+}
+
+function parseString (numbersString) {
+    return numbersArray = numbersString.split(/[\n,]+/);
 }
 
 function sum(numbersArr) {                      // summarize the numbers
