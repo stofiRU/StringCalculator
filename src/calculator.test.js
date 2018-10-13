@@ -33,3 +33,7 @@ it("should throw exception when negatives are in the string", () => {
         add("1, 3, 5, -6")
     }).toThrow();
 });
+
+it("should add a new delim if string starts with '//' followed by new delim and newline", () => { 
+    expect(add("//;\n1;6")).toBe(7);
+});

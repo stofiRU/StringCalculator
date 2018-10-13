@@ -1,5 +1,10 @@
 function add(numbers) {     // adds string of numbers
-
+    if (numbers.substring(0,2) == "//") {
+        var d = numbers.indexOf('\n');                    // find the location of the last (or only) char of the input
+        var newDeliminator = numbers.substring(2, d);     // isolate the delim    
+        numbers = numbers.substring(d+1);           // remove the unnecessary beginning of the string
+        numbers = numbers.split(newDeliminator).join(',');  // replace the new delim with a comma to utilize the parseString func
+    }
     if (numbers == "") {    // empty string returns 0
         return 0;
     }
