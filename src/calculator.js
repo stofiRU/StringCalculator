@@ -15,7 +15,10 @@ function parseString (numbersString) {
 function sum(numbersArr) {                      // summarize the numbers
     total = 0;
     for(i = 0; i < numbersArr.length; i++) {    // basic sum loop
-        total += parseInt(numbersArr[i]);
+        num = parseInt(numbersArr[i]);
+        if(num < 1000) {                        // ignore number if it's over 1000
+            total += num;
+        }
     }
     return total;
 }
