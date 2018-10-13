@@ -27,3 +27,9 @@ it("should return sum of numbers when an unexpected amount of numbers/arguments 
 it("should return sum of numbers when a new line is in the string", () => { 
     expect(add("1\n3\n2")).toBe(6);
 });
+
+it("should throw exception when negatives are in the string", () => { 
+    expect(() => {
+        add("1, 3, 5, -6")
+    }).toThrow("Negatives not allowed: -6");
+});

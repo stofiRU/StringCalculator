@@ -3,7 +3,8 @@ function add(numbers) {     // adds string of numbers
     if (numbers == "") {    // empty string returns 0
         return 0;
     }
-    parsedNumbers = parseString (numbers);
+    parsedNumbers = parseString (numbers);  // parse the string
+    checkForNegatives(parsedNumbers);       // 
     return sum(parsedNumbers);
 }
 
@@ -17,6 +18,18 @@ function sum(numbersArr) {                      // summarize the numbers
         total += parseInt(numbersArr[i]);
     }
     return total;
+}
+
+function checkForNegatives (numbers) {          // check if numbers array has any negative values
+    var negNumbers = [];                        // array of neg numbers
+    for (i = 0; i < numbers.length; i++) {
+        if (numbers[i] < 0) {                   // if a number is negative
+            negNumbers.push(numbers[i]);        // add to the array of neg numbers
+        }
+        if (negNumbers.length > 0) {            // if we have any neg numbers
+            throw("Negatives not allowed: " + negNumbers);   // throw exception, text + list of neg numbers
+        }
+    }
 }
 
 module.exports = add;
