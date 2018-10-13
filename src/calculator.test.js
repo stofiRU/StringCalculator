@@ -31,5 +31,5 @@ it("should return sum of numbers when a new line is in the string", () => {
 it("should throw exception when negatives are in the string", () => { 
     expect(() => {
         add("1, 3, 5, -6")
-    }).toThrow("Negatives not allowed: -6");
+    }).toThrow();
 });
